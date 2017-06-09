@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "dist",
+    "outFile": "md-zippy",
+    "declaration": true,
+    "stripInternal": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "files": [
+    "./component/zippy.module.ts"
+  ]
+}

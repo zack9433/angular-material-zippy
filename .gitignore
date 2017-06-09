@@ -1,0 +1,8 @@
+.npmrc
+.tmp
+.vscode
+.opt-in
+.opt-out
+build
+dist
+node_modules

@@ -1,0 +1,73 @@
+{
+  "name": "angular-material-zippy",
+  "version": "1.0.0",
+  "description": "zippy component for angular material",
+  "main": "index.js",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "commit": "git-cz",
+    "prebuild": "rimraf dist",
+    "build": "webpack --env=prod --config=./webpack.prod.js",
+    "start": "webpack-dev-server",
+    "test": "karma start karma.config.js",
+    "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html",
+    "test:codecov": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/lcov.info -t lcovonly",
+    "test:codecov:push": "cat ./coverage/lcov.info | codecov"
+  },
+  "keywords": [
+    "AngularJS",
+    "TypeScript",
+    "WebPack",
+    "NPM"
+  ],
+  "author": "Zack Yang <zack9433@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/angular": "^1.6.18",
+    "@types/angular-material": "^1.1.51",
+    "@types/angular-mocks": "^1.5.9",
+    "@types/core-js": "^0.9.41",
+    "@types/jasmine": "^2.5.47",
+    "@types/node": "^7.0.14",
+    "@types/webpack-env": "^1.13.0",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-mocks": "^1.6.4",
+    "awesome-typescript-loader": "^3.1.2",
+    "codecov.io": "^0.1.6",
+    "commitizen": "^2.9.6",
+    "core-js": "^2.4.1",
+    "cz-conventional-changelog": "^2.0.0",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.28.0",
+    "husky": "^0.13.4",
+    "istanbul-instrumenter-loader": "^2.0.0",
+    "jasmine-core": "^2.6.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.3",
+    "ng-annotate-loader": "^0.5.0",
+    "opt-cli": "^1.5.1",
+    "remap-istanbul": "^0.9.5",
+    "rimraf": "^2.6.1",
+    "tslint": "^5.4.3",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.3.4",
+    "validate-commit-msg": "^2.12.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "peerDependencies": {
+    "angular": "^1.6.4",
+    "angular-material": "^1.1.4"
+  }
+}
