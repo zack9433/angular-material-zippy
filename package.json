@@ -1,6 +1,6 @@
 {
   "name": "angular-material-zippy",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "zippy component for angular material",
   "main": "index.js",
   "config": {
@@ -17,7 +17,8 @@
     "test": "karma start karma.config.js",
     "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html",
     "test:codecov": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/lcov.info -t lcovonly",
-    "test:codecov:push": "cat ./coverage/lcov.info | codecov"
+    "test:codecov:push": "cat ./coverage/lcov.info | codecov",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "AngularJS",
@@ -64,10 +65,15 @@
     "typescript": "^2.3.4",
     "validate-commit-msg": "^2.12.2",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "semantic-release": "^6.3.6"
   },
   "peerDependencies": {
     "angular": "^1.6.4",
     "angular-material": "^1.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zack9433/angular-material-zippy.git"
   }
 }
