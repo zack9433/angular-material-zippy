@@ -28,3 +28,6 @@ before_install:
 
 script:
   - yarn run build
+
+after_success:
+  - yarn run semantic-release
