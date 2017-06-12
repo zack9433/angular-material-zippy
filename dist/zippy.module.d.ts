@@ -1,1 +1,2 @@
-export declare const MdZippyModule: string;
+declare const mdZippyModule: string;
+export { mdZippyModule };

@@ -136,7 +136,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var angular = __webpack_require__(1);
 var ngMaterial = __webpack_require__(2);
 var zippy_component_1 = __webpack_require__(0);
-exports.MdZippyModule = angular.module('md-zippy', [ngMaterial]).component('mdZippy', zippy_component_1.MdZippyComponent).name;
+var mdZippyModule = angular.module('md-zippy', [ngMaterial]).component('mdZippy', zippy_component_1.MdZippyComponent).name;
+exports.mdZippyModule = mdZippyModule;
 
 
 /***/ })
