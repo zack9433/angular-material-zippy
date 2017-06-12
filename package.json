@@ -18,6 +18,7 @@
     "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html",
     "test:codecov": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/lcov.info -t lcovonly",
     "test:codecov:push": "cat ./coverage/lcov.info | codecov",
+    "postpublish": "publish-latest",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
@@ -59,6 +60,7 @@
     "karma-webpack": "^2.0.3",
     "ng-annotate-loader": "^0.5.0",
     "opt-cli": "^1.5.1",
+    "publish-latest": "^1.1.2",
     "remap-istanbul": "^0.9.5",
     "rimraf": "^2.6.1",
     "semantic-release": "^6.3.6",

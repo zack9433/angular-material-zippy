@@ -319,6 +319,10 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+author-regex@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-0.2.1.tgz#8bdefaac6065a931799bec07eeef51b940e08f3c"
+
 awesome-typescript-loader@^3.1.2:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/awesome-typescript-loader/-/awesome-typescript-loader-3.1.3.tgz#7eb41dfb136c2ea0e099bef038dc70c45f810223"
@@ -806,7 +810,11 @@ combined-stream@~0.0.4:
   dependencies:
     delayed-stream "0.0.5"
 
-commander@2.9.0, commander@2.9.x, commander@^2.9.0, commander@~2.9.0:
+commander@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-0.6.1.tgz#fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06"
+
+commander@2.9.0, commander@2.9.x, commander@^2.8.1, commander@^2.9.0, commander@~2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
@@ -1251,6 +1259,24 @@ domutils@1.5.1:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
+
+dox@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/dox/-/dox-0.6.1.tgz#8247075ad4b275fe88fbbae02fe12f3c5480a7fd"
+  dependencies:
+    commander "0.6.1"
+    jsdoctypeparser "^1.1.1"
+    marked ">=0.3.1"
+
+doxme@^1.8.1:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/doxme/-/doxme-1.8.2.tgz#8dc3c4a38682a4e96a72e0029eaad5c1a3546442"
+  dependencies:
+    concat-stream "^1.4.7"
+    markdown-table "^0.3.1"
+    minimist "^1.1.0"
+    repo-path-parse "^1.0.1"
+    striptags "^2.0.0"
 
 duplexer2@0.0.2:
   version "0.0.2"
@@ -2446,6 +2472,12 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
+jsdoctypeparser@^1.1.1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/jsdoctypeparser/-/jsdoctypeparser-1.2.0.tgz#e7dedc153a11849ffc5141144ae86a7ef0c25392"
+  dependencies:
+    lodash "^3.7.0"
+
 jsesc@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-1.3.0.tgz#46c3fec8c1892b12b0833db9bc7622176dbab34b"
@@ -2762,7 +2794,7 @@ lodash@4.17.2:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
-lodash@^3.6.0, lodash@^3.8.0:
+lodash@^3.6.0, lodash@^3.7.0, lodash@^3.8.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
@@ -2817,6 +2849,14 @@ map-obj@^1.0.0, map-obj@^1.0.1:
 map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
+
+markdown-table@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-0.3.2.tgz#ab0501425117218c498754d57e244dcd4a80232e"
+
+marked@>=0.3.1:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -3333,6 +3373,12 @@ parse-asn1@^5.0.0:
     evp_bytestokey "^1.0.0"
     pbkdf2 "^3.0.3"
 
+parse-author@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/parse-author/-/parse-author-0.2.0.tgz#de4274e5e702c18831c501a7cf66fcdf319fb1f9"
+  dependencies:
+    author-regex "^0.2.1"
+
 parse-github-repo-url@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/parse-github-repo-url/-/parse-github-repo-url-1.4.0.tgz#286c53e2c9962e0641649ee3ac9508fca4dd959c"
@@ -3387,6 +3433,10 @@ path-exists@2.1.0, path-exists@^2.0.0:
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-2.1.0.tgz#0feb6c64f0fc518d9a754dd5efb62c7022761f4b"
   dependencies:
     pinkie-promise "^2.0.0"
+
+path-here@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/path-here/-/path-here-1.1.1.tgz#2b9201741340382b95d0e9ee08c6a65f8165d069"
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -3509,6 +3559,15 @@ public-encrypt@^4.0.0:
     parse-asn1 "^5.0.0"
     randombytes "^2.0.1"
 
+publish-latest@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/publish-latest/-/publish-latest-1.1.2.tgz#454a7849d364f497510a5f20bd99f17550b3a8f7"
+  dependencies:
+    commander "^2.8.1"
+    parse-author "0.2.0"
+    path-here "^1.1.0"
+    repo-path-parse "1.0.1"
+
 punycode@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
@@ -3607,7 +3666,7 @@ readable-stream@1.0, readable-stream@~1.0.2, readable-stream@~1.0.26:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.6, readable-stream@^2.1.4, readable-stream@^2.2.2, readable-stream@^2.2.6, readable-stream@^2.2.9:
+"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.1.4, readable-stream@^2.2.2, readable-stream@^2.2.6, readable-stream@^2.2.9:
   version "2.2.11"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.11.tgz#0796b31f8d7688007ff0b93a8088d34aa17c0f72"
   dependencies:
@@ -3619,7 +3678,7 @@ readable-stream@1.0, readable-stream@~1.0.2, readable-stream@~1.0.26:
     string_decoder "~1.0.0"
     util-deprecate "~1.0.1"
 
-readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@~2.0.0, readable-stream@~2.0.5:
+readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@^2.0.6, readable-stream@~2.0.0, readable-stream@~2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
@@ -3727,6 +3786,13 @@ repeating@^2.0.0:
 replace-ext@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-0.0.1.tgz#29bbd92078a739f0bcce2b4ee41e837953522924"
+
+repo-path-parse@1.0.1, repo-path-parse@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/repo-path-parse/-/repo-path-parse-1.0.1.tgz#c510fbd5cd47eea04d81ca33cc5d4d533c8da60a"
+  dependencies:
+    dox "^0.6.1"
+    doxme "^1.8.1"
 
 request-promise-core@1.1.1:
   version "1.1.1"
@@ -4328,6 +4394,10 @@ strip-indent@^1.0.1:
 strip-json-comments@2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
+striptags@^2.0.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/striptags/-/striptags-2.2.1.tgz#4c450b708d41b8bf39cf24c49ff234fc6aabfd32"
 
 supports-color@^2.0.0:
   version "2.0.0"
