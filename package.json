@@ -2,7 +2,7 @@
   "name": "angular-material-zippy",
   "version": "0.0.1",
   "description": "zippy component for angular material",
-  "main": "index.js",
+  "main": "./dist/md-zippy.min.js",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
