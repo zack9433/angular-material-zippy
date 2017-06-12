@@ -11,11 +11,16 @@ export const MdZippyComponent: angular.IComponentOptions = {
   transclude: true,
   controller: MdZippyController,
   template: `
-    <div class="zippy">
-      <div class="title" ng-click="$ctrl.toggle()">{{$ctrl.title}}</div>
-      <div ng-show="$ctrl.active">
-        <div class="body" ng-transclude></div>
-      </div>
-    </div>
+    <md-list>
+      <md-subheader class="md-no-sticky md-primary" ng-click="$ctrl.toggle()" style="outline: none;">
+        <div layout="row" layout-align="space-between center">
+          <div>{{$ctrl.title}}</div>
+          <div>{{$ctrl.active ? '＋' : '—'}}</div>
+        </div>
+      </md-subheader>
+      <md-list-item ng-show="$ctrl.active">
+        <div ng-transclude></div>
+      </md-list-item>
+    </md-list>
   `
 };

@@ -36,6 +36,7 @@
     "@types/jasmine": "^2.5.47",
     "@types/node": "^7.0.14",
     "@types/webpack-env": "^1.13.0",
+    "angular": "^1.6.4",
     "angular-animate": "^1.6.4",
     "angular-aria": "^1.6.4",
     "angular-material": "^1.1.4",
@@ -60,13 +61,13 @@
     "opt-cli": "^1.5.1",
     "remap-istanbul": "^0.9.5",
     "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.6",
     "tslint": "^5.4.3",
     "tslint-loader": "^3.5.3",
     "typescript": "^2.3.4",
     "validate-commit-msg": "^2.12.2",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5",
-    "semantic-release": "^6.3.6"
+    "webpack-dev-server": "^2.4.5"
   },
   "peerDependencies": {
     "angular": "^1.6.4",
