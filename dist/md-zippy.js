@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("angular"), require("angular-material"));
 	else if(typeof define === 'function' && define.amd)
-		define("md-zippy", ["angular", "angular-material"], factory);
+		define("mdMaterialZippy", ["angular", "angular-material"], factory);
 	else if(typeof exports === 'object')
-		exports["md-zippy"] = factory(require("angular"), require("angular-material"));
+		exports["mdMaterialZippy"] = factory(require("angular"), require("angular-material"));
 	else
-		root["md-zippy"] = factory(root["angular"], root["angular-material"]);
+		root["mdMaterialZippy"] = factory(root["angular"], root["angular-material"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
