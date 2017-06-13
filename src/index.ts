@@ -13,12 +13,12 @@ import * as angular from 'angular';
 /**
  *  Import module to be bootstrapped
  */
-import { MdZippyModule } from './component/zippy.module';
+import { mdZippyModule } from './component/zippy.module';
 
 /**
  * Bootstrap the application using the imported moduleName
  */
-const bootstrapModuleName = angular.module('application.bootstrap', [MdZippyModule]).name;
+const bootstrapModuleName = angular.module('application.bootstrap', [mdZippyModule]).name;
 
 angular.element(function() {
   angular.bootstrap(document, [bootstrapModuleName]);
