@@ -20,7 +20,7 @@ export const MdZippyComponent: angular.IComponentOptions = {
       </md-subheader>
       <div ng-show="$ctrl.active">
         <div ng-transclude></div>
-      </dmvd-list-item>
+      </div>
     </div>
   `
 };
