@@ -91,7 +91,7 @@ exports.MdZippyComponent = {
     },
     transclude: true,
     controller: zippy_controller_1.MdZippyController,
-    template: "\n    <div>\n      <md-subheader class=\"md-no-sticky md-primary\" ng-click=\"$ctrl.toggle()\" style=\"outline: none;\">\n        <div layout=\"row\" layout-align=\"space-between center\">\n          <div>{{$ctrl.title}}</div>\n          <div>{{$ctrl.active ? '\u2014' : '\uFF0B'}}</div>\n        </div>\n      </md-subheader>\n      <div ng-show=\"$ctrl.active\">\n        <div ng-transclude></div>\n      </dmvd-list-item>\n    </div>\n  "
+    template: "\n    <div>\n      <md-subheader class=\"md-no-sticky md-primary\" ng-click=\"$ctrl.toggle()\" style=\"outline: none;\">\n        <div layout=\"row\" layout-align=\"space-between center\">\n          <div>{{$ctrl.title}}</div>\n          <div>{{$ctrl.active ? '\u2014' : '\uFF0B'}}</div>\n        </div>\n      </md-subheader>\n      <div ng-show=\"$ctrl.active\">\n        <div ng-transclude></div>\n      </div>\n    </div>\n  "
 };
 
 
