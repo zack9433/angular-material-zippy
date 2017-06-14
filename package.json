@@ -1,6 +1,6 @@
 {
   "name": "angular-material-zippy",
-  "version": "0.0.1",
+  "version": "1.0.8",
   "description": "zippy component for angular material",
   "main": "./dist/md-zippy.min.js",
   "config": {
